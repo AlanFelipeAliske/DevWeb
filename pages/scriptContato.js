@@ -1,4 +1,6 @@
 
+//Mask
+
 function mascara(o,f){
   v_obj=o
   v_fun=f
@@ -22,7 +24,7 @@ window.onload = function(){
   }
 }
 
-
+//Function theme dark
 
 const chk = document.getElementById('chk');
 
@@ -42,5 +44,6 @@ floating_btn.addEventListener('click', () => {
 close_btn.addEventListener('click', () => {
 	social_panel_container.classList.remove('visible')
 });
+
 
 

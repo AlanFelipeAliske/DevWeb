@@ -13,10 +13,11 @@
 	--black: black;
 	--input: #f4f4f4;
 	--inputHover: #cccccc;
+	
 }
 
 *{
-  font-family: sans-serif;
+	font-family: sans-serif;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -34,7 +35,7 @@ body.dark{
 	--titleColor: #a864e4;
 	--border: darkgrey;
 	--input: #0d141d;
-	--inputHover: #cccccc;
+	--inputHover: #cccccc00;
 }
 body {
 	transition: 0.5s;
@@ -57,7 +58,8 @@ section{
 .container{
   width: 1200px;
   display: flex;
-  justify-content: center;
+	justify-content: center;
+	padding: 10px;
 }
 
 .logo{
@@ -78,10 +80,12 @@ section{
 }
 .theme{
   display: flex;
-  justify-content: flex-end;
+	justify-content: flex-end;
+	align-items: center;
+	height: 50px;
 }
 div form h3{
-  margin: 25px 0px;
+  margin-bottom: 20px;
   font-size: 30px;
   font-weight: normal;
   color: var(--titleColor);
@@ -117,6 +121,7 @@ fieldset{
 	color: var(--textColor);
 }
 div input, select{
+	font-size: 18px;
   outline: 0;
   color: var(--textColor);
   border-radius: 5px;
@@ -246,7 +251,7 @@ div select:focus {
   border: 1px solid var(--border);
   border-radius: 5px;
   outline: none;
-  min-width: 200px;
+  min-width: 150px;
   padding: 10px 10px;
   font-size: 15px;
   transition: all .1s linear;
@@ -295,6 +300,7 @@ div select:focus {
 /*----------------------------------------------------------------------------*/
 
 .checkbox {
+	display: none;
 	opacity: 0;
 }
 
@@ -328,4 +334,77 @@ div select:focus {
 .checkbox:checked + .label .ball {
 	transform: translateX(15px);
 }
+
+.mm-line{
+	height: 2px;
+	border-radius: 20px;
+	background: var(--titleColor);
+}
+.menuMobile{
+	display: none;
+	width: 25px;
+	height: 25px;
+}
+
+@media screen and (max-width:1200){
+	.container{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width:880px){
+	:root{
+		font-size: 90%;
+	}
+	.container{
+		width: 100%;
+	}
+	fieldset{
+		width: 100%;
+		padding: 10px;
+	}
+	.form{
+		margin: 0;
+	}
+	.logoImg{
+		width: 110px;
+	}
+	header{
+		height: auto;
+	}
+	nav ul{
+		display: none;
+		flex-direction: column;
+	}
+	.menuMobile{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
