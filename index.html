@@ -4,34 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/contato.css">
   <link rel="shortcut icon" href="css/imagens/desenvolvedor.svg">
+  <link rel="stylesheet" href="css/main.css">
   <title>DevWeb</title>
 </head>
 <body>
   <header>
     <div class="container">
       <div class="logo">
-        <a href="/">
-          <img src="css/imagens/Logo.png" width="200px" alt="Logo do site">
+        <a href="index.html">
+          <img class="logoImg" src="css/imagens/Logo.png" width="200px" alt="Logo do site">
         </a>
       </div>
       <div class="menu">
         <nav>
+          <div class="menuMobile">
+            <div class="mm-line"></div>
+            <div class="mm-line"></div>
+            <div class="mm-line"></div>
+          </div>
           <ul>
             <a href=""><li>Principal</li></a>
             <a href=""><li>Participação em projetos</li></a>
-            <a href=""><li>Sobre</li></a>
-            <a href="contato.html"><li>Contato</li></a>
+            <a href=""><li>Página</li></a>
+            <a href="/contato.html"><li>Contato</li></a>
           </ul>
         </nav>
       </div>
     </div>
   </header>
-    <main>
-      <h1>texto</h1>
-    </main>
+  <section>
+    <div class="container theme">
+      <div>
+        <input type="checkbox" class="checkbox" id="chk" />
+          <label class="label" for="chk">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+          </label>
+      </div>
+    </div>
+  </section>
   <footer>
 
   </footer>
+    <script src="js/scriptContato.js"></script>
+    <script src="js/home.js"></script>
 </body>
 </html>

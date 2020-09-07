@@ -25,7 +25,6 @@ window.onload = function(){
 }
 
 //Function theme dark
-
 const chk = document.getElementById('chk');
 
 chk.addEventListener('change', () => {

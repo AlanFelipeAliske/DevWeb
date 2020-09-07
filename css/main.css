@@ -1,0 +1,142 @@
+:root{
+	--blue: blue;
+	--red: red;
+	--black: black;
+	--white: white;
+  --bodyColor: #f4f4f4;
+  --grey: grey;
+	--textColor: #54595F;
+	--titleColor: #a864e4;
+	--border: grey;
+	--grey: grey;
+	--black: black;
+	--input: #f4f4f4;
+	--inputHover: #cccccc;
+	
+}
+*{
+	font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body.dark{
+	transition: 0.5s;
+	--bodyColor: #16202C;
+	--black: white;
+	--white: black;
+	--blue: red;
+	--red: blue;
+    --grey: grey;
+	--textColor: #f4f4f4;
+	--titleColor: #a864e4;
+	--border: darkgrey;
+	--input: #0d141d;
+	--inputHover: #cccccc00;
+}
+body {
+	transition: 0.5s;
+  background: var(--bodyColor);  
+}
+header{
+  display: flex;
+  justify-content: center;
+  height: 100px;
+	background: black;
+	opacity: 0.9;
+}
+
+section{
+  display: flex;
+  justify-content: center;
+}
+.container{
+  width: 1200px;
+  display: flex;
+	justify-content: center;
+	padding: 10px;
+}
+
+.logo{
+  width: 25%;
+  display: flex;
+	align-items: center;
+	transition: 0.3s;
+}
+.logo:hover {
+  transition: 0.3s;
+  opacity: 0.7;
+}
+.menu {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.theme{
+  display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 50px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav ul a{
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--titleColor);
+  padding: 10px;
+  margin-left: 5px;
+	text-decoration: none;
+	transition: 0.3s;
+}
+nav ul a:hover{
+  transition: 0.3s;
+  opacity: 0.7;
+}
+@media screen and (max-width:1200px){
+	.container{
+		width: 95%;
+	}
+}
+@media screen and (max-width: 880px){
+  .container{
+		width: 100%;
+	}
+  fieldset{
+    width: 100%;
+  }
+  .form{
+		margin: 0;
+	}
+}
+
+@media screen and (max-width:576px){
+	:root{
+		font-size: 90%;
+	}
+	fieldset{
+		width: 100%;
+		padding: 10px;
+	}
+	.logoImg{
+		width: 110px;
+	}
+	header{
+		height: auto;
+	}
+	nav ul{
+		display: none;
+		flex-direction: column;
+	}
+	.menuMobile{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+}
